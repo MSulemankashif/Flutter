@@ -56,7 +56,18 @@ void main() {
                   Text(chatList[index]['message'])
                 ],
               ),
-              trailing: Icon(Icons.message),
+              trailing: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('06:55 PM',),
+                  Text('${chatList[index]['isSeen']? 'Seen' : 'Not Seen'}',
+                    style: TextStyle(
+                      color: chatList[index]['isSeen']? Colors.blue : Colors.grey
+                    )
+                  )
+                ]
+              )
+              
             );
           },
         )
