@@ -45,7 +45,13 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-          
+          SizedBox(height: 6,),
+
+          // Desc 
+          TextField(
+            controller: descController,
+            // TBC
+          )
 
           ],
         ),
